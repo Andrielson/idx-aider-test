@@ -34,7 +34,7 @@
     workspace = {
       # Runs when a workspace is first created
       onCreate = {
-        aider-install = "uv tool install --force --python python3.12 aider-chat@latest";
+        aider-install = "uv tool install --force --python python3.12 aider-chat@latest && echo 'export PATH=\"/home/user/.local/bin:$PATH\"' >> ~/.bashrc";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [ ".idx/dev.nix" ];
       };
